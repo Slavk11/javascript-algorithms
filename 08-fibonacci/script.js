@@ -9,8 +9,17 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
+    let firstNumber = 0;
+    let secondNumber = 1;
+    for (let i = 3; i <= n; i++) {
+    let sum = firstNumber + secondNumber;
+    firstNumber = secondNumber;
+    secondNumber = sum;
+    }
+    return secondNumber;
+    
 }
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
