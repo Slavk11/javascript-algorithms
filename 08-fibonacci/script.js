@@ -9,15 +9,12 @@
 */
 
 function fibonacci(n) {
-    let firstNumber = 0;
-    let secondNumber = 1;
-    for (let i = 3; i <= n; i++) {
-    let sum = firstNumber + secondNumber;
-    firstNumber = secondNumber;
-    secondNumber = sum;
-    }
-    return secondNumber;
-    
+    const result = [0,1]
+	for(let i = 0; i < n - 2; i++){
+		let a = result[i] + result[i+1];
+		result.push(a)
+	}
+	return result[n-1]
 }
 
 
