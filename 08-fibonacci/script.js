@@ -11,10 +11,10 @@
 function fibonacci(n) {
     const result = [0,1]
 	for(let i = 0; i < n - 2; i++){
-		let a = result[i] + result[i+1];
+		const a = result[i] + result[i+1];
 		result.push(a)
 	}
-	return result[n-1]
+	return result[n - 1]
 }
 
 
